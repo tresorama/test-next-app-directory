@@ -8,11 +8,14 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-cornice': `
+          linear-gradient(to right, hsl(0 0% 0%) -70%, transparent 15%),
+          linear-gradient(to left, hsl(0 0% 0%) -70%, transparent 15%),
+          linear-gradient(to bottom, hsl(0 0% 0%) -70%, transparent 15%),
+          linear-gradient(to top, hsl(0 0% 0%) -70%, transparent 15%)
+        `,
       },
     },
   },
   plugins: [],
-}
+};
