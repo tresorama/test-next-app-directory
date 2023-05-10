@@ -2,10 +2,11 @@ const sleep = (timeInMs: number) =>
   new Promise((res) => setTimeout(res, timeInMs));
 
 // API fetchers
+const ARTIFICIAL_DELAY_TIME = 7000;
 type FetchOptions = Parameters<typeof fetch>[1];
 const createFetcher = <Data extends unknown>(url: string) => {
   return async (fetchOptions?: FetchOptions) => {
-    await sleep(4000);
+    await sleep(ARTIFICIAL_DELAY_TIME);
     const response = await fetch(url, fetchOptions);
     throw new Error("Forced error"); // forced error
     //if (Math.random() > 0.5) throw new Error('50/50 chance to fail and it\'s failed!'); // this will render "error.tsx" component
