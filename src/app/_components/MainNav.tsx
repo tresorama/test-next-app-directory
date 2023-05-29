@@ -1,15 +1,35 @@
-'use client';
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import cx from 'classnames';
+import cx from "classnames";
 
-const getNavLinks = (pathname: string): { name: string, href: string, isActive: boolean; }[] => ([
-  { name: "Home", href: '/', isActive: pathname === '/' },
-  { name: 'Dashboard', href: '/dashboard', isActive: pathname.startsWith('/dashboard') },
-  { name: 'Contact', href: '/contact', isActive: pathname.startsWith('/contact') },
-  { name: 'Json Placeholders', href: '/jsonplaceholders', isActive: pathname.startsWith('/jsonplaceholders') },
-  { name: 'Json Placeholders - Route Group', href: '/jsonplaceholders-route-group', isActive: pathname.startsWith('/jsonplaceholders-route-group') },
-]);
+const getNavLinks = (
+  pathname: string
+): { name: string; href: string; isActive: boolean }[] => [
+  { name: "Home", href: "/", isActive: pathname === "/" },
+  {
+    name: "Dashboard",
+    href: "/dashboard",
+    isActive: pathname.startsWith("/dashboard"),
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+    isActive: pathname.startsWith("/contact"),
+  },
+  {
+    name: "Json Placeholders",
+    href: "/jsonplaceholders",
+    isActive:
+      pathname.startsWith("/jsonplaceholders") &&
+      pathname.endsWith("/jsonplaceholders"),
+  },
+  {
+    name: "Json Placeholders - Route Group",
+    href: "/jsonplaceholders-route-group",
+    isActive: pathname.startsWith("/jsonplaceholders-route-group"),
+  },
+];
 
 export const MainNav = () => {
   const pathname = usePathname();

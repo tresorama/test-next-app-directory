@@ -11,8 +11,8 @@ export default function Error({ error, reset }: {
         <FileHint fileName="app/jsonplaceholders/@posts/error.tsx" />
       </div>
       <div>
-        <h2>Posts Error Handler - Something went wrong!</h2>
-        <p>Error details:</p>
+        <h2 className="text-xs">Posts Error Handler - Something went wrong!</h2>
+        <p className="text-xs">Error details:</p>
         <pre className="whitespace-pre">{error.message}</pre>
       </div>
       <button className="border px-[1em] py-[0.5em]" onClick={() => reset()}>
