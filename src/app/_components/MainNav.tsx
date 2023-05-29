@@ -8,6 +8,7 @@ const getNavLinks = (pathname: string): { name: string, href: string, isActive: 
   { name: 'Dashboard', href: '/dashboard', isActive: pathname.startsWith('/dashboard') },
   { name: 'Contact', href: '/contact', isActive: pathname.startsWith('/contact') },
   { name: 'Json Placeholders', href: '/jsonplaceholders', isActive: pathname.startsWith('/jsonplaceholders') },
+  { name: 'Json Placeholders - Route Group', href: '/jsonplaceholders-route-group', isActive: pathname.startsWith('/jsonplaceholders-route-group') },
 ]);
 
 export const MainNav = () => {

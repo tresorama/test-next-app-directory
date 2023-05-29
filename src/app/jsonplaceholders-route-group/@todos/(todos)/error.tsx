@@ -8,7 +8,7 @@ export default function Error({ error, reset }: {
   return (
     <div className="bg-blue-800 rounded-xl p-2 flex flex-col gap-4">
       <div className="self-end">
-        <FileHint fileName="app/jsonplaceholders/@posts/error.tsx" />
+        <FileHint fileName="app/jsonplaceholders/@todos/error.tsx" />
       </div>
       <div>
         <h2>Posts Error Handler - Something went wrong!</h2>
