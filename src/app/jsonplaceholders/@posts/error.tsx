@@ -1,4 +1,7 @@
-'use client';// Error components must be Client components
+// Error components must be Client components
+'use client';
+import { FileHint } from "@/ui/FileHint";
+
 
 export default function Error({ error, reset }: {
   error: Error;
