@@ -1,7 +1,7 @@
 import { fetchTodos } from "../_utils/fetchers";
 
 export default async function Page() {
-  const todos = await fetchTodos({ cache: 'no-store' });
+  const todos = await fetchTodos();
 
   return (
     <div className="max-h-[40vh] overflow-auto flex flex-col gap-2">
