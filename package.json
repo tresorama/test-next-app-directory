@@ -15,11 +15,11 @@
     "autoprefixer": "10.4.14",
     "classnames": "^2.3.2",
     "eslint": "8.40.0",
-    "eslint-config-next": "13.5.4",
-    "next": "13.5.4",
+    "eslint-config-next": "^15.0.0-rc.0",
+    "next": "^15.0.0-rc.0",
     "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^19.0.0-rc-512b09b2-20240718",
+    "react-dom": "^19.0.0-rc-512b09b2-20240718",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   }
